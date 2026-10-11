@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flappy Bird | My Game</title>
+  <meta name="description" content="Play my Flappy Bird browser game!">
+
+  <!-- Connect CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Connect JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="app">
+
+    <header class="heading">
+      <p class="eyebrow">MY MINI GAME</p>
+      <h1>Flappy <span>Bird</span> 🐤</h1>
+      <p class="subtitle">Tap, fly and beat your best score!</p>
+    </header>
+
+    <section class="game-card" aria-label="Flappy Bird game">
+
+      <div class="score-bar">
+        <div class="score-box">
+          <span>SCORE</span>
+          <strong id="score">0</strong>
+        </div>
+
+        <div class="score-box">
+          <span>BEST</span>
+          <strong id="best">0</strong>
+        </div>
+      </div>
+
+      <div class="game-container">
+
+        <canvas
+          id="game"
+          width="400"
+          height="600"
+          aria-label="Flappy Bird game area"
+        ></canvas>
+
+        <div class="overlay" id="overlay">
+          <div class="overlay-content">
+
+            <div class="bird-icon">🐤</div>
+
+            <h2 id="message">Ready to Fly?</h2>
+
+            <p id="instructions">
+              Dodge the pipes and collect points!
+            </p>
+
+            <button id="startBtn" type="button">
+              Start Game ▶
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="controls">
+        <span>⌨️ SPACE</span>
+        <span>🖱️ CLICK</span>
+        <span>📱 TAP</span>
+      </div>
+
+    </section>
+
+    <p class="footer">
+      Made with 💛 using HTML, CSS & JavaScript
+    </p>
+
+  </main>
+</body>
+</html>
